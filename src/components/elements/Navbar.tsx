@@ -1,4 +1,5 @@
 import Container from "../shared/Container";
+import NavItem from "../shared/NavItem";
 import logo from "/assets/icon.svg";
 
 const navLinks = [
@@ -35,7 +36,7 @@ export default function Navbar() {
                         text-lg text-heading-2  w-full lg:justify-center lg:items-center"
             >
               {navLinks.map((item, key) => (
-                <NavItem />
+                <NavItem href={item.href} text={item.text} key={key} />
               ))}
             </ul>
           </div>
