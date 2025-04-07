@@ -1,3 +1,4 @@
+import BtnLink from "../shared/BtnLink";
 import Container from "../shared/Container";
 import NavItem from "../shared/NavItem";
 import logo from "/assets/icon.svg";
@@ -28,7 +29,7 @@ export default function Navbar() {
           <div
             className="flex flex-col lg:flex-row w-full lg:justify-between lg:items-center 
                       absolute top-full left-0 lg:static lg:top-0 bg-body lg:bg-transparent b
-                      order-x border-x-box-border lg:border-x-0 lg:h-auto"
+                      order-x border-x-box-border lg:border-x-0 lg:h-auto h-0 overflow-hidden"
           >
             <ul
               className="border-t border-box-border lg:border-t-0 px-6 lg:px-0
@@ -39,6 +40,13 @@ export default function Navbar() {
                 <NavItem href={item.href} text={item.text} key={key} />
               ))}
             </ul>
+            <div
+              className="lg:min-w-max flex items-center sm:w-max w-full pb-6
+            lg:pb-0 border-b border-box-border lg:border-0
+            px-6 lg:px-0"
+            >
+              <BtnLink text="Get Started" href="#cta" className="" />
+            </div>
           </div>
         </nav>
       </Container>
