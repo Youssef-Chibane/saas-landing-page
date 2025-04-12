@@ -4,7 +4,7 @@ interface BtnLinkProps {
   className?: string;
 }
 
-export default function BtnLink({ href, text, className = "" }: BtnLinkProps) {
+export function BtnLink({ href, text, className = "" }: BtnLinkProps) {
   return (
     <a
       href={href}

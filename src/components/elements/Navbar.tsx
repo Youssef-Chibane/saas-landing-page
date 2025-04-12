@@ -1,7 +1,7 @@
 import { useThemeStore } from "../../store/ThemeStore";
-import BtnLink from "../shared/BtnLink";
-import Container from "../shared/Container";
-import NavItem from "../shared/NavItem";
+import { BtnLink } from "../shared/BtnLink";
+import { Container } from "../shared/Container";
+import { NavItem } from "../shared/NavItem";
 import logo from "/assets/icon.svg";
 
 const navLinks = [
@@ -11,8 +11,8 @@ const navLinks = [
   { href: "#features", text: "Features" },
 ];
 
-export default function Navbar() {
-  const { toggleTheme, theme } = useThemeStore()
+export function Navbar() {
+  const { toggleTheme, theme } = useThemeStore();
   return (
     <header className="absolute inset-x-0 top-0 z-50 py-6">
       <Container>

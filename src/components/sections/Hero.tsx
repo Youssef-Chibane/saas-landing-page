@@ -1,8 +1,9 @@
 import { Button } from "../shared/Button";
 import { Container } from "../shared/Container";
 import { Paragraph } from "../shared/Paragraph";
+import { Numbers } from "./Numbers";
 
-export default function Hero() {
+export function Hero() {
   return (
     <section className="relative pt-32 lg:pt-36">
       <Container className="flex flex-col lg:flex-row gap-10 lg:gap-12">
@@ -80,6 +81,7 @@ export default function Hero() {
           />
         </div>
       </Container>
+      <Numbers />
     </section>
   );
 }

@@ -3,7 +3,7 @@ interface ContainerProps {
   text: string;
 }
 
-export default function NavItem({ href, text }: ContainerProps) {
+export function NavItem({ href, text }: ContainerProps) {
   return (
     <li>
       <a
