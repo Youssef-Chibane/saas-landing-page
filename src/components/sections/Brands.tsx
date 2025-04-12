@@ -1,7 +1,7 @@
 import { Container } from "../shared/Container";
 import { Title } from "../shared/Title";
 
-const logos = ["discord", "openai", "paypal", "spotify", "youtube"];
+const logos = ["discord", "paypal", "spotify", "youtube"];
 
 export function Brands() {
   return (
